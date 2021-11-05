@@ -96,7 +96,7 @@ def tobs():
 
 #/api/v1.0/<start>
 @app.route("/api/v1.0/<start>")
-def temp_range_start(start):
+def start(start):
     """TMIN, TAVG, and TMAX per date starting from a starting date.
     
     Args:
@@ -131,7 +131,7 @@ def temp_range_start(start):
 
 #/api/v1.0/<start>/<end>
 @app.route("/api/v1.0/<start>/<end>")
-def temp_range_start_end(start,end):
+def start_end(start,end):
     """TMIN, TAVG, and TMAX per date for a date range.
     
     Args:
